@@ -1,10 +1,13 @@
 {
-    "name": "bernard/normalt",
-    "description": "Normalt is a extension to Symfony Serializer that only implements the Normalization part",
-    "keywords": ["normalization", "denormalization"],
+    "name": "dfau/normalt",
+    "description": "Normalt is a extension to Symfony Serializer that only implements the Normalization part - this is the DFAU fork",
+    "keywords": [
+        "normalization",
+        "denormalization"
+    ],
     "license": "MIT",
     "require": {
-	    "php": "^5.6 || ^7.0 || ^8.0",
+        "php": "^5.6 || ^7.0 || ^8.0",
         "symfony/serializer": "^2.3 || ^3.0 || ^4.0 || ^5.0"
     },
     "require-dev": {
@@ -12,10 +15,14 @@
         "phpspec/phpspec": "^2.5"
     },
     "autoload": {
-        "psr-4": { "Normalt\\": "src/" }
+        "psr-4": {
+            "Normalt\\": "src/"
+        }
     },
     "autoload-dev": {
-        "psr-4": { "Fixtures\\": "spec/Fixtures/" }
+        "psr-4": {
+            "Fixtures\\": "spec/Fixtures/"
+        }
     },
     "scripts": {
         "test": "vendor/bin/phpspec run"
